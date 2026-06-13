@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Productos | True Beauty</title>
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="/index.html" class="nav-logo">
+        <img src="/assets/Imagenes/Logo-TrueBeauty.png" alt="Logo True Beauty">
+        <span>True Beauty</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="/index.html">Principal</a></li>
+        <li><a href="/products.html">Productos</a></li>
+        <li><a href="/register.html">Registro</a></li>
+        <li><a href="/contact.html">Contacto</a></li>
+        <li><a href="/about.html">Acerca de</a></li>
+        <li><a href="/admin-products.html">Admin</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <span>👤</span>
+        <span>🛒</span>
+        <button class="btn-login">Login</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="admin-page">
+
+    <section class="admin-title">
+      <h1>Administrador de productos</h1>
+      <p>Gestioná los productos cargados en True Beauty.</p>
+    </section>
+
+    <section class="admin-section">
+      <h2>Listado de productos</h2>
+
+      <div class="table-container">
+        <table class="products-table">
+          <thead>
+            <tr>
+              <th>Foto</th>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Fecha</th>
+              <th>Precio</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <img src="../assets/Imagenes/Base.png" alt="Base líquida">
+              </td>
+              <td>Base líquida</td>
+              <td>Base de textura liviana para un acabado natural.</td>
+              <td>10-06-2026</td>
+              <td>$12.500</td>
+              <td class="actions">
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Borrar</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="../assets/Imagenes/Brochas.png" alt="Brochas profesionales">
+              </td>
+              <td>Brochas profesionales</td>
+              <td>Set de brochas para aplicar maquillaje con precisión.</td>
+              <td>10-06-2026</td>
+              <td>$9.800</td>
+              <td class="actions">
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Borrar</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="../assets/Imagenes/Bronceador.webp" alt="Bronceador compacto">
+              </td>
+              <td>Bronceador compacto</td>
+              <td>Bronceador ideal para dar calidez al rostro.</td>
+              <td>10-06-2026</td>
+              <td>$8.900</td>
+              <td class="actions">
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Borrar</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="../assets/Imagenes/Esponjas.png" alt="Esponjas beauty">
+              </td>
+              <td>Esponjas beauty</td>
+              <td>Esponjas suaves para difuminar base y corrector.</td>
+              <td>10-06-2026</td>
+              <td>$5.200</td>
+              <td class="actions">
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Borrar</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="../assets/Imagenes/Gloss.png" alt="Gloss rosa">
+              </td>
+              <td>Gloss rosa</td>
+              <td>Gloss con brillo delicado para labios luminosos.</td>
+              <td>10-06-2026</td>
+              <td>$6.500</td>
+              <td class="actions">
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Borrar</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="../assets/Imagenes/Lipgloss.png" alt="Lip gloss hidratante">
+              </td>
+              <td>Lip gloss hidratante</td>
+              <td>Brillo labial hidratante para uso diario.</td>
+              <td>10-06-2026</td>
+              <td>$7.300</td>
+              <td class="actions">
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Borrar</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="../assets/Imagenes/Pintalabiosyrubor.png" alt="Pintalabios y rubor">
+              </td>
+              <td>Pintalabios y rubor</td>
+              <td>Producto combinado para labios y mejillas.</td>
+              <td>10-06-2026</td>
+              <td>$10.200</td>
+              <td class="actions">
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Borrar</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="../assets/Imagenes/Rubor.png" alt="Rubor compacto">
+              </td>
+              <td>Rubor compacto</td>
+              <td>Rubor suave para dar color natural al rostro.</td>
+              <td>10-06-2026</td>
+              <td>$7.900</td>
+              <td class="actions">
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Borrar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="admin-section">
+      <h2>Cargar nuevo producto</h2>
+
+      <form class="admin-form">
+        <div class="form-group">
+          <label for="nombre">Nombre del producto</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Máscara de pestañas" required>
+        </div>
+
+        <div class="form-group">
+          <label for="precio">Precio</label>
+          <input type="number" id="precio" name="precio" placeholder="Ej: 8500" required>
+        </div>
+
+        <div class="form-group">
+          <label for="descripcion">Descripción</label>
+          <textarea id="descripcion" name="descripcion" placeholder="Escribí una descripción del producto" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="categoria">Categoría</label>
+          <select id="categoria" name="categoria" required>
+            <option value="">Seleccioná una categoría</option>
+            <option value="rostro">Rostro</option>
+            <option value="labios">Labios</option>
+            <option value="accesorios">Accesorios</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="imagen">Imagen URL</label>
+          <input type="url" id="imagen" name="imagen" placeholder="https://imagen.com/producto.jpg">
+        </div>
+
+        <div class="form-group">
+          <label for="stock">Stock</label>
+          <input type="number" id="stock" name="stock" placeholder="Ej: 20">
+        </div>
+
+        <div class="form-group">
+          <label for="youtube">Link de YouTube</label>
+          <input type="url" id="youtube" name="youtube" placeholder="https://youtube.com/...">
+        </div>
+
+        <div class="checkbox-group">
+          <p>Características</p>
+
+          <label>
+            <input type="checkbox">
+            Producto destacado
+          </label>
+
+          <label>
+            <input type="checkbox">
+            Nuevo ingreso
+          </label>
+
+          <label>
+            <input type="checkbox">
+            En oferta
+          </label>
+        </div>
+
+        <button type="submit" class="save-btn">Guardar producto</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+
+      <div class="footer-column">
+        <h3>True Beauty</h3>
+        <p>Maquillaje para realzar tu belleza natural.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Redes</h3>
+        <a href="#">LinkedIn</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contacto</h3>
+        <p>Email: truebeauty@gmail.com</p>
+        <p>Tel: 11-0000-0000</p>
+        <p>Dirección: Buenos Aires, Argentina</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

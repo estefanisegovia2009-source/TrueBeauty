@@ -1,0 +1,213 @@
+.banner {
+  min-height: 420px;
+  background:
+    linear-gradient(rgba(201, 133, 118, 0.35), rgba(255, 247, 245, 0.8)),
+    url("../assets/Imagenes/Portada.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.banner-content {
+  background-color: rgba(255, 247, 245, 0.75);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+}
+
+.banner-content h1 {
+  font-family: var(--font-title);
+  font-size: 56px;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.banner-content p {
+  font-size: 18px;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.hero-text,
+.hero-image {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-family: var(--font-title);
+  font-size: 38px;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-text p {
+  color: var(--color-text-light);
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.featured-products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.featured-products h2 {
+  font-family: var(--font-title);
+  font-size: 38px;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+}
+
+.product-card {
+  flex: 1 1 250px;
+  background-color: var(--color-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.product-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: var(--spacing-md);
+}
+
+.product-info h3 {
+  font-family: var(--font-title);
+  color: var(--color-primary-dark);
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.category {
+  color: var(--color-text-light);
+  font-size: 14px;
+}
+
+.price {
+  font-weight: 700;
+  margin: 10px 0;
+  color: var(--color-text);
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.card-actions button,
+.card-actions a {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.card-actions button:hover,
+.card-actions a:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.disabled-link {
+  cursor: default;
+}
+
+.benefits {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.benefit-card {
+  flex: 1;
+  background-color: var(--color-card);
+  padding: var(--spacing-lg);
+  text-align: center;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.benefit-card span {
+  font-size: 34px;
+}
+
+.benefit-card h3 {
+  font-family: var(--font-title);
+  color: var(--color-primary-dark);
+  margin: var(--spacing-sm) 0;
+}
+
+.benefit-card p {
+  color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 40px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-lg);
+  }
+
+  .hero-text h2 {
+    font-size: 30px;
+  }
+
+  .products-grid {
+    flex-direction: column;
+  }
+
+  .benefits {
+    flex-direction: column;
+    padding: var(--spacing-lg);
+  }
+}
