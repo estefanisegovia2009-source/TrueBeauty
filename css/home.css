@@ -1,34 +1,100 @@
 .banner {
-  min-height: 420px;
+  min-height: 360px;
   background:
-    linear-gradient(rgba(201, 133, 118, 0.35), rgba(255, 247, 245, 0.8)),
+    linear-gradient(rgba(255, 247, 245, 0.75), rgba(255, 247, 245, 0.9)),
     url("../assets/Imagenes/Portada.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: var(--spacing-xl);
+  padding: 32px 16px;
 }
 
 .banner-content {
-  background-color: rgba(255, 247, 245, 0.75);
-  padding: var(--spacing-xl);
-  border-radius: var(--radius-lg);
+  background-color: rgba(255, 247, 245, 0.95);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-card);
+  max-width: 500px;
+  width: 90%;
 }
 
 .banner-content h1 {
   font-family: var(--font-title);
-  font-size: 56px;
+  font-size: 42px;
   color: var(--color-primary-dark);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: 10px;
 }
 
 .banner-content p {
-  font-size: 18px;
   color: var(--color-text);
-  margin-bottom: var(--spacing-md);
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.banner-content .btn-primary {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 12px 22px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+}
+
+.banner-content .btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.home-banner {
+  min-height: 360px;
+  background-color: #f8ddd8;
+  background-image:
+    linear-gradient(rgba(255, 247, 245, 0.75), rgba(255, 247, 245, 0.9)),
+    url("../assets/Imagenes/Portada.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.home-banner-content {
+  background-color: rgba(255, 247, 245, 0.95);
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-card);
+  max-width: 500px;
+  width: 90%;
+}
+
+.home-banner-content h1 {
+  font-family: var(--font-title);
+  font-size: 42px;
+  color: var(--color-primary-dark);
+  margin-bottom: 10px;
+}
+
+.home-banner-content p {
+  color: var(--color-text);
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.home-banner-content a {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 12px 22px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+}
+
+.home-banner-content a:hover {
+  background-color: var(--color-primary-dark);
 }
 
 .hero {
@@ -60,7 +126,7 @@
 
 .hero-image img {
   width: 100%;
-  max-height: 480px;
+  max-height: 420px;
   object-fit: cover;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
@@ -84,10 +150,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-lg);
+  justify-content: center;
 }
 
 .product-card {
   flex: 1 1 250px;
+  max-width: 280px;
   background-color: var(--color-card);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
@@ -102,7 +170,7 @@
 
 .product-card img {
   width: 100%;
-  height: 240px;
+  height: 230px;
   object-fit: cover;
 }
 
@@ -188,26 +256,113 @@
 }
 
 @media (max-width: 768px) {
-  .banner-content h1 {
-    font-size: 40px;
+  .banner,
+  .home-banner {
+    min-height: 280px;
+    padding: 20px 12px;
+  }
+
+  .banner-content,
+  .home-banner-content {
+    padding: 18px;
+    width: 92%;
+  }
+
+  .banner-content h1,
+  .home-banner-content h1 {
+    font-size: 32px;
+  }
+
+  .banner-content p,
+  .home-banner-content p {
+    font-size: 15px;
   }
 
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: var(--spacing-lg);
+    padding: 20px 12px;
+    gap: 16px;
   }
 
   .hero-text h2 {
+    font-size: 28px;
+  }
+
+  .hero-image img {
+    max-height: 220px;
+    object-fit: cover;
+  }
+
+  .featured-products {
+    padding: 20px 12px;
+  }
+
+  .featured-products h2 {
     font-size: 30px;
+    margin-bottom: 18px;
   }
 
   .products-grid {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    overflow: visible;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    background-color: var(--color-white);
+    padding: 8px;
+  }
+
+  .product-info {
+    display: block;
+    padding: 14px;
+    text-align: center;
+  }
+
+  .product-info h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .category {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .price {
+    margin: 8px 0 12px;
+  }
+
+  .card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .card-actions button,
+  .card-actions a {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    font-size: 14px;
+    min-height: 42px;
   }
 
   .benefits {
     flex-direction: column;
-    padding: var(--spacing-lg);
+    padding: 20px 12px;
   }
 }
